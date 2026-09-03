@@ -3,10 +3,14 @@
 
 name: arXiv-daily-ai-enhanced
 
+# on:
+#   schedule:
+#     - cron: "30 17 * * *"
+#   workflow_dispatch:
 on:
   schedule:
-    - cron: "30 17 * * *"
-  workflow_dispatch:
+    # UTC 14:16 → 北京时间 22:16（DeepSeek空闲价格）
+    - cron: "16 14 * * *"
 
 
 jobs:
