@@ -10,7 +10,7 @@ name: arXiv-daily-ai-enhanced
 on:
   schedule:
     # UTC 14:16 → 北京时间 22:16（DeepSeek空闲价格）
-    - cron: "16 14 * * *"
+    - cron: "16 14 * * 1-5"
 
 
 jobs:
